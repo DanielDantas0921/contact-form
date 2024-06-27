@@ -1,15 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./src/img/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/img/favicon-32x32.png" />
     <title>Frontend Mentor | Contact form</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
     <script defer src="./src/js/script.js" type="module"></script>
-    
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main>
+      <form action="#">
+        <h1>Contact Us</h1>
+        <div class="name">
+          <div class="name-item first-name">
+            <label for="firstName">First Name *</label>
+            <input class="input" type="text" id="firstName" />
+            <span class="error none">This field is required</span>
+          </div>
+          <div class="name-item last-name">
+            <label for="lastName">Last Name *</label>
+            <input class="input" type="text" id="lastName" />
+            <span class="error none">This field is required</span>
+          </div>
+        </div>
+
+        <div class="email">
+          <label for="email">Email *</label>
+          <input id="email" class="input" type="text" />
+          <span class="error none">This field is required</span>
+        </div>
+
+        <div class="query-type">
+          <label>Query Type *</label>
+
+          <div class="div-query-type">
+            <div class="query-type-item" id="query-tyoe-general">
+              <div class="div-radio-general-enquiry div-radio">
+                <input type="radio" name="queryType" id="general-enquiry" />
+                <label for="general-enquiry"></label>
+              </div>
+              <label for="general-enquiry">General Enquiry</label>
+            </div>
+
+            <div class="query-type-item" id="query-type-support">
+              <div class="div-radio-support-request div-radio">
+                <input type="radio" name="queryType" id="support-request" />
+                <label for="support-request"></label>
+              </div>
+              <label for="support-request">Support Request</label>
+            </div>
+          </div>
+        </div> <!--fechamento da div query-type-->
+        <span class="error none">Please select a query type</span>
+
+
+        <div class="div-message">
+          <label for="messageId">Message *</label>
+          <textarea name="message" id="messageId"></textarea>
+        </div>
+
+        <div class="terms-checkbox">
+          <input type="checkbox" name="terms" id="termsId">
+          <label for="termsId">I consent to being contacted by the team</label>
+         
+        </div>
+        <span class="error none" id="terms">To submit this form, please consent to being contacted</span>
+
+        <button class="btn">submit</button>
+      </form>
+    </main>
+
+    <script src="./src/js/inputRadios.js"></script>
+  </body>
 </html>

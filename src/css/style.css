@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+:root{
+   
+   /* primary colors */
+    --green200: #E0F1E8;
+    --green600: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    /* neutral colors */
+    --white: hsl(0, 0%, 100%);
+    --grey500: hsl(186, 15%, 59%);
+    --grey900: hsl(187, 24%, 22%);
+    --fontlabels: "16px";
+
+}
+
+body{
+    background-color: var(--green200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width: 35rem;   
+    height: auto;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 1rem 2rem;
+}  
+
+form h1{
+    color: var(--grey900);
+}
+
+.name{
+    display: flex;
+    gap: 15px;
+}
+
+.name-item{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.name-item label{
+    margin-bottom: 0.5rem;
+}
+
+.input{
+   padding: 0.5rem; 
+   font-size: 1.1rem;
+   border-radius: 5px;
+}
+
+label{
+    color: var(--grey900);
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+}
+.email label{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.query-type > label{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.div-query-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: var(--grey900);
+
+}
+
+[type="radio"]{
+    visibility: hidden;
+}
+
+[type="radio"]:checked + .query-type-item{
+    background-color: purple;
+}
+
+
+
+.query-type-item{
+    padding: 0.5rem 1.0rem;
+    display: flex;
+    border: 1px solid var(--green600);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.div-radio{
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--green600);
+    border-radius: 50%;
+    align-self: center;
+    margin-right: 0.3rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.div-radio input:checked + label:before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--green600);
+    border-radius: 50%;
+    
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+}
+
+
+
+
+.div-message{
+display: flex;
+flex-direction: column;
+}
+
+.div-message label{
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+.div-message textarea{
+    height: 4rem;
+    border-radius: 10px;
+}
+
+
+.terms-checkbox{
+    display: flex;
+    margin: 0.5rem 0;
+    align-items: center;
+    
+}
+
+.terms-checkbox label{
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--green600);
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* estilizar errors */
+
+.error{
+    color: #D73C3C;
+    margin-top: 0.3rem;
+    display: inline-block;
+}
+
+/* por enquanto usa-se uma classe .none para esconder os 
+elementos mas posteriormente vai ser usado javascript para esconder ou aparecer os elementos */
+
+.none{
+    /* display: none; */
+}
+
+#terms{
+    margin-top: -0.8rem;
+}

@@ -1,0 +1,5 @@
+colocar id em todos os spans para pegar no javascript e começar a fazer a parte do javascript para validar o formulário
+
+mostrando ou ocultando os itens
+
+depois será feito o responsivo
