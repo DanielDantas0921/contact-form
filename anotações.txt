@@ -1,5 +1,10 @@
 colocar id em todos os spans para pegar no javascript e começar a fazer a parte do javascript para validar o formulário
 
+genery-enquiry
+por padrão o span estará oculto
+condição para quando não for marcado nenhuma exibir o span
+condição para quando for marcado pelo menos uma ocultar o span
+
 mostrando ou ocultando os itens
 
 depois será feito o responsivo
