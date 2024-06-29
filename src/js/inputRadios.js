@@ -16,7 +16,7 @@ const divSupport = document.getElementById("query-type-support")
 const queryTypeAll = document.querySelectorAll(".query-type-item")
 const inputGeneralEnquiry = document.getElementById("general-enquiry")
 const inputSupportEnquiry = document.getElementById("support-request")
-const queryTypeSpan = document.getElementById("queryTypeSpan")
+const queryTypeSpan2 = document.getElementById("queryTypeSpan")
 
 
 function limpaEstilos(){
@@ -29,13 +29,13 @@ divGeneral.addEventListener("click", function (){
     limpaEstilos()
     this.style.backgroundColor = "#E0F1E8"
     inputGeneralEnquiry.checked = true
-    queryTypeSpan.style.display = "none"
+    queryTypeSpan2.style.display = "none"
 })
 
 divSupport.addEventListener("click", function (){
     limpaEstilos()
     this.style.backgroundColor = "#E0F1E8"
     inputSupportEnquiry.checked = true
-    queryTypeSpan.style.display = "none"
+    queryTypeSpan2.style.display = "none"
 })
 
